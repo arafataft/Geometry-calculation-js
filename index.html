@@ -16,22 +16,192 @@
         <!-- navbar -->
         <div class="navbar rounded bg-slate-300 px-5">
             <div class="flex-1 block">
-              <a class=" normal-case text-xl">Interactive </a>
-              <p class="normal-case  ">Geometry Genius</p>
+                <a class=" normal-case text-xl">Interactive </a>
+                <p class="normal-case  ">Geometry Genius</p>
             </div>
             <div class="flex-none">
-              <button class="btn btn-primary">
-                Blog
-              </button>
+                <button class="btn btn-primary">
+                    Blog
+                </button>
             </div>
-          </div>
+        </div>
     </header>
 
+
+
     <main>
-        <section>
-            
+        <section class="lg:px-10 flex flex-col md:flex-row lg:flex-row">
+            <div class="products-cetails w-3/4 mx-auto mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- first card  -->
+                <div class="card card-compact w-full border-solid border-2 border-zinc-300 bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="ow-full h-50 p-5" src="./images/triangle.png" alt="triangle" />
+                    </figure>
+                    <div class="card-body mx-auto items-center mt-4">
+                        <h2 class="card-title" id="first-name">Triangle</h2>
+                        <p>
+                            Area (A) = 0.5 &#215; b &#215; h
+                        </p>
+                        <div class="flex items-center my-3">
+                            <div class="w-1/2 mr-2 flex">
+                                <input type="text" class="w-full mr-2 px-3 py-1 border rounded-md" placeholder="b">
+                                <p>cm</p>
+                            </div>
+                            <div class="flex w-1/2 ml-2">
+                                <input type="text" class="w-full mr-2 px-3 py-1 border rounded-md" placeholder="h">
+                                <p>cm</p>
+                            </div>
+                        </div>
+
+                        <div class="card-actions justify-center">
+                            <button class="btn btn-primary px-10" id="first-card">
+                                Calculate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- second -->
+                <div class="card card-compact w-full bg-base-100 border-solid border-2 border-zinc-300 shadow-xl">
+                    <figure>
+                        <img class="w-full h-50 p-5 pt-14" src="./images/rectangle.png" alt="triangle" />
+                    </figure>
+                    <div class="card-body mx-auto items-center mt-3">
+                        <h2 class="card-title" id="first-name">Rectangle</h2>
+                        <p>
+                            Area (A) = w &#215; l
+                        </p>
+                        <div class="flex items-center my-3">
+                            <div class="w-1/2 mr-2 flex">
+                                <input type="text" class="w-full mr-2 px-3 py-1 border rounded-md" placeholder="w">
+                                <p>cm</p>
+                            </div>
+                            <div class="flex w-1/2 ml-2">
+                                <input type="text" class="w-full mr-2 px-3 py-1 border rounded-md" placeholder="l">
+                                <p>cm</p>
+                            </div>
+                        </div>
+
+                        <div class="card-actions justify-center">
+                            <button class="btn btn-primary px-10" id="first-card">
+                                Calculate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- third -->
+                <div class="card card-compact w-full bg-base-100 border-solid border-2 border-zinc-300 shadow-xl">
+                    <figure>
+                        <img class="w-full h-50 p-5 pt-16 mt-4" src="./images/parallelogram.png" alt="triangle" />
+                    </figure>
+                    <div class="card-body mx-auto items-center ">
+                        <h2 class="card-title" id="first-name">Parallelogram</h2>
+                        <p>
+                            Area (A) = b &#215; h
+                        </p>
+                        <p>
+                            b=10cm, h=12cm
+                        </p>
+
+                        <div class="card-actions justify-center">
+                            <button class="btn btn-primary px-10" id="first-card">
+                                Calculate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- four -->
+                <div class="card card-compact w-full border-solid border-2 border-zinc-300 bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="w-full h-50 p-5 pt-16" src="./images/rhombus.png" alt="triangle" />
+                    </figure>
+                    <div class="card-body mx-auto items-center">
+                        <h2 class="card-title" id="first-name">Rhombus</h2>
+                        <p>
+                            Area (A) = 0.5 &#215; d<sub>1</sub> &#215; d<sub>2</sub>
+                        </p>
+                        <p>
+                            d<sub>1</sub>= 16 cm, d<sub>2</sub>=8cm
+                        </p>
+
+                        <div class="card-actions justify-center">
+                            <button class="btn btn-primary px-10" id="first-card">
+                                Calculate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- five -->
+                <div class="card card-compact w-full border-solid border-2 border-zinc-300 bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="w-full h-50 p-5 pt-3" src="./images/pentagon.png" alt="triangle" />
+                    </figure>
+                    <div class="card-body mx-auto items-center">
+                        <h2 class="card-title" id="first-name">Pentagon</h2>
+                        <p>
+                            Area (A) = 0.5 &#215; p &#215; b
+                        </p>
+                        <p>
+                            p=6cm, b=10cm
+                        </p>
+
+                        <div class="card-actions justify-center">
+                            <button class="btn btn-primary px-10" id="first-card">
+                                Calculate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- last -->
+                <div class="card card-compact w-full border-solid border-2 border-zinc-300 bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="w-full h-50 p-5 pt-20" src="./images/ellipse.png" alt="triangle" />
+                    </figure>
+                    <div class="card-body mx-auto items-center mt-2 ">
+                        <h2 class="card-title" id="first-name">Ellipse</h2>
+                        <p>
+                            Area (A) = &pi;ab
+                        </p>
+                        <p>
+                            a=10cm, b=4cm
+                        </p>
+
+                        <div class="card-actions justify-center">
+                            <button class="btn btn-primary px-10" id="first-card">
+                                Calculate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- cart details div  -->
+            <div class="cart-details w-1/7 mx-auto">
+                <h1 class="text-xl text-center font-bold underline m-5">
+                    Area Calculation
+                </h1>
+                <div class="overflow-x-auto">
+                    <table class="table w-full">
+                        
+                        <tbody id="table-container">
+                            <!-- <tr>
+                    <th>1</th>
+                    <td>Cy Ganderton</td>
+                    <td>Quality Control Specialist</td>
+                    <td>Blue</td>
+                  </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
         </section>
     </main>
+
+
+
+
 </body>
 
 </html>
