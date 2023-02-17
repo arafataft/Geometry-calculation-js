@@ -45,7 +45,7 @@
                         </p>
                         <div class="flex items-center my-3">
                             <div class="w-1/2 mr-2 flex">
-                                <input type="text" id="triangleFirstInput" class="w-full mr-2 px-3 py-1 border rounded-md" placeholder="b">
+                                <input type="number" id="triangleFirstInput" class="w-full mr-2 px-3 py-1 border rounded-md" placeholder="b">
                                 <p>cm</p>
                             </div>
                             <div class="flex w-1/2 ml-2">
@@ -67,23 +67,23 @@
                         <img class="w-full h-50 p-5 pt-14" src="./images/rectangle.png" alt="triangle" />
                     </figure>
                     <div class="card-body mx-auto items-center mt-3">
-                        <h2 class="card-title" id="first-name">Rectangle</h2>
+                        <h2 class="card-title" id="second-name">Rectangle</h2>
                         <p>
                             Area (A) = w &#215; l
                         </p>
                         <div class="flex items-center my-3">
                             <div class="w-1/2 mr-2 flex">
-                                <input type="number" class="w-full mr-2 px-3 py-1 border rounded-md" placeholder="w">
+                                <input type="number" id="rectangleFirstInput" class="w-full mr-2 px-3 py-1 border rounded-md" placeholder="w">
                                 <p>cm</p>
                             </div>
                             <div class="flex w-1/2 ml-2">
-                                <input type="number" class="w-full mr-2 px-3 py-1 border rounded-md" placeholder="l">
+                                <input type="number" id="rectangleSecondInput" class="w-full mr-2 px-3 py-1 border rounded-md" placeholder="l">
                                 <p>cm</p>
                             </div>
                         </div>
 
                         <div class="card-actions justify-center">
-                            <button class="btn btn-primary px-10" id="first-card">
+                            <button class="btn btn-primary px-10" id="second-card">
                                 Calculate
                             </button>
                         </div>
@@ -95,16 +95,16 @@
                         <img class="w-full h-50 p-5 pt-16 mt-4" src="./images/parallelogram.png" alt="triangle" />
                     </figure>
                     <div class="card-body mx-auto items-center ">
-                        <h2 class="card-title" id="first-name">Parallelogram</h2>
+                        <h2 class="card-title" id="third-name">Parallelogram</h2>
                         <p>
                             Area (A) = b &#215; h
                         </p>
                         <p>
-                            b=10cm, h=12cm
+                            b=<span id="parallelogramFirstValue">10</span>cm, h=<span id="parallelogramSecondValue">12</span> cm
                         </p>
 
                         <div class="card-actions justify-center">
-                            <button class="btn btn-primary px-10" id="first-card">
+                            <button class="btn btn-primary px-10" id="third-card">
                                 Calculate
                             </button>
                         </div>
@@ -186,7 +186,7 @@
                         
                         <tbody id="table-container">
                             
-                            
+
                         </tbody>
                     </table>
                 </div>
