@@ -45,11 +45,11 @@
                         </p>
                         <div class="flex items-center my-3">
                             <div class="w-1/2 mr-2 flex">
-                                <input type="text" class="w-full mr-2 px-3 py-1 border rounded-md" placeholder="b">
+                                <input type="text" id="triangleFirstInput" class="w-full mr-2 px-3 py-1 border rounded-md" placeholder="b">
                                 <p>cm</p>
                             </div>
                             <div class="flex w-1/2 ml-2">
-                                <input type="text" class="w-full mr-2 px-3 py-1 border rounded-md" placeholder="h">
+                                <input type="number" id="triangleSecondInput" class="w-full mr-2 px-3 py-1 border rounded-md" placeholder="h">
                                 <p>cm</p>
                             </div>
                         </div>
@@ -73,11 +73,11 @@
                         </p>
                         <div class="flex items-center my-3">
                             <div class="w-1/2 mr-2 flex">
-                                <input type="text" class="w-full mr-2 px-3 py-1 border rounded-md" placeholder="w">
+                                <input type="number" class="w-full mr-2 px-3 py-1 border rounded-md" placeholder="w">
                                 <p>cm</p>
                             </div>
                             <div class="flex w-1/2 ml-2">
-                                <input type="text" class="w-full mr-2 px-3 py-1 border rounded-md" placeholder="l">
+                                <input type="number" class="w-full mr-2 px-3 py-1 border rounded-md" placeholder="l">
                                 <p>cm</p>
                             </div>
                         </div>
@@ -179,18 +179,14 @@
             <!-- cart details div  -->
             <div class="cart-details w-1/7 mx-auto">
                 <h1 class="text-xl text-center font-bold underline m-5">
-                    Area Calculation
+                    Area Calculation <span id="area-calculation"></span>
                 </h1>
                 <div class="overflow-x-auto">
                     <table class="table w-full">
                         
                         <tbody id="table-container">
-                            <!-- <tr>
-                    <th>1</th>
-                    <td>Cy Ganderton</td>
-                    <td>Quality Control Specialist</td>
-                    <td>Blue</td>
-                  </tr> -->
+                            
+                            
                         </tbody>
                     </table>
                 </div>
