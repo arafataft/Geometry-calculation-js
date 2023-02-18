@@ -1,91 +1,35 @@
 // console.log("Hello arafat")
+
 // blog button 
+
 document.getElementById("btn-blog").addEventListener('click', function () {
     window.location.href = 'blog.html'
     console.log("dfjkjfsdj")
 })
 
 
-// card 
+// all card 
+
 let serial=0;
-// common function 
-
-function getValue(firstValue,secondValue,name){
-    const firsValue=document.getElementById(firstValue).value;
-    const sValue=document.getElementById(secondValue).value;
-    const Nname=document.getElementById(name).innerText;
-
-    if (
-        firsValue == "" ||
-        sValue == "" ||
-        firsValue < 0 ||
-        sValue < 0 || 
-        isNaN(firsValue)||
-        isNaN(sValue)
-      ) {
-        return alert("please enter any valid number");
-      }
-
-    const nameValue={
-        firstValue: firsValue,
-        secondValue: sValue,
-        name: Nname,
-    };
-    return nameValue;
-}
-
-function getInnerInfo(firstValue,secondValue,name){
-    const firsValue=document.getElementById(firstValue).innerText;
-    const sValue=document.getElementById(secondValue).innerText;
-    const Nname=document.getElementById(name).innerText;
-
-    if (
-        firsValue == "" ||
-        sValue == "" ||
-        firsValue < 0 ||
-        sValue < 0 || 
-        isNaN(firsValue)||
-        isNaN(sValue)
-      ) {
-        return alert("please enter any valid number");
-      }
-
-    const nameValue={
-        firstValue: firsValue,
-        secondValue: sValue,
-        name: Nname,
-    };
-    return nameValue;
-}
 
 
-function display(serial,name,area){
-    const container = document.getElementById("table-container");
-    const tr = document.createElement("tr");
-    tr.innerHTML = `
-    <td>${serial+'.'}</td>
-    <td>${name}</td>
-    <td>${area+'cm<sup>2</sup>'}</td>
-    <td>
-    <button class="btn btn-primary ">covert to <span class="lowercase">m<sup>2</sup></span> </button>
-    </td>
-    
-  `;
-    container.appendChild(tr);
-    document.getElementById("area-calculation").innerText = serial;
-}
 
-// 1st card 
+
+
+
+
+// 1st card triangle
 document.getElementById("first-card").addEventListener("click", function () {
     serial += 1;
     
     const nameValue=getValue("triangleFirstInput","triangleSecondInput","first-name");
     
     const area=0.5*parseFloat(nameValue.firstValue)*parseFloat(nameValue.secondValue);
-
+    area.toFixed(2);
     display(serial,nameValue.name,area);
 
 });
+
 
 // 2nd card 
 document.getElementById("second-card").addEventListener("click", function () {
@@ -132,8 +76,8 @@ document.getElementById("five-card").addEventListener("click", function () {
     
     const nameValue=getInnerInfo("pentagonFirstValue","pentagonSecondValue","five-name");
     
-    const area=3.1416*parseFloat(nameValue.firstValue)*parseFloat(nameValue.secondValue);
-
+    const area=(0.5*parseFloat(nameValue.firstValue)*parseFloat(nameValue.secondValue)).toFixed(2);
+    
     display(serial,nameValue.name,area);
 
 });
@@ -146,7 +90,7 @@ document.getElementById("last-card").addEventListener("click", function () {
     
     const nameValue=getInnerInfo("ellipseFirstValue","ellipseSecondValue","last-name");
     
-    const area=0.5*parseFloat(nameValue.firstValue)*parseFloat(nameValue.secondValue);
+    const area=(3.1416*parseFloat(nameValue.firstValue)*parseFloat(nameValue.secondValue)).toFixed(2);
 
     display(serial,nameValue.name,area);
 

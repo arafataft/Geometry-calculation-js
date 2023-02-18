@@ -13,7 +13,9 @@
 
 <body>
     <header class="mx-auto my-5 px-5 rounded">
-        <!-- navbar -->
+        <!-------------- 
+            navbar 
+        ----------------->
         <div class="navbar rounded bg-slate-300 px-5">
             <div class="flex-1 block">
                 <a class=" normal-case font-bold text-xl">Interactive </a>
@@ -31,9 +33,13 @@
 
     <main>
         <section class="lg:px-10 flex flex-col md:flex-row lg:flex-row">
+
+            <!-- 
+                all card  
+            -->
             <div class="products-cetails w-3/4 mx-auto mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
-                <!-- first card  -->
+                <!-- first card triangle  -->
                 <div class="card card-compact bg-color-random w-full border-solid border-2 border-zinc-300 bg-base-100 shadow-xl">
                     <figure>
                         <img class="ow-full h-50 p-5" src="./images/triangle.png" alt="triangle" />
@@ -61,10 +67,12 @@
                         </div>
                     </div>
                 </div>
-                <!-- second -->
+                <!-----------------------
+                    card second Rectangle
+                ---------------------------->
                 <div class="card card-compact bg-color-random w-full bg-base-100 border-solid border-2 border-zinc-300 shadow-xl">
                     <figure>
-                        <img class="w-full h-50 p-5 pt-14" src="./images/rectangle.png" alt="triangle" />
+                        <img class="w-full h-50 p-5 pt-14" src="./images/rectangle.png" alt="Rectangle" />
                     </figure>
                     <div class="card-body mx-auto items-center mt-3">
                         <h2 class="card-title" id="second-name">Rectangle</h2>
@@ -89,10 +97,12 @@
                         </div>
                     </div>
                 </div>
-                <!-- third -->
+                <!-------------------------
+                    card third Parallelogram
+                ---------------------------->
                 <div class="card card-compact bg-color-random w-full bg-base-100 border-solid border-2 border-zinc-300 shadow-xl">
                     <figure>
-                        <img class="w-full h-50 p-5 pt-16 mt-4" src="./images/parallelogram.png" alt="triangle" />
+                        <img class="w-full h-50 p-5 pt-16 mt-4" src="./images/parallelogram.png" alt="Parallelogram" />
                     </figure>
                     <div class="card-body mx-auto items-center ">
                         <h2 class="card-title" id="third-name">Parallelogram</h2>
@@ -100,7 +110,7 @@
                             Area (A) = b &#215; h
                         </p>
                         <p>
-                            b=<span id="parallelogramFirstValue">10</span>cm, h=<span id="parallelogramSecondValue">12</span> cm
+                            b=<span id="parallelogramFirstValue">10</span> cm, h=<span id="parallelogramSecondValue">12</span> cm
                         </p>
 
                         <div class="card-actions justify-center">
@@ -111,10 +121,12 @@
                     </div>
                 </div>
 
-                <!-- four -->
+                <!-----------------
+                    card four Rhombus
+                -------------------->
                 <div class="card card-compact bg-color-random w-full border-solid border-2 border-zinc-300 bg-base-100 shadow-xl">
                     <figure>
-                        <img class="w-full h-50 p-5 pt-16" src="./images/rhombus.png" alt="triangle" />
+                        <img class="w-full h-50 p-5 pt-16" src="./images/rhombus.png" alt="Rhombus" />
                     </figure>
                     <div class="card-body mx-auto items-center">
                         <h2 class="card-title" id="four-name">Rhombus</h2>
@@ -132,10 +144,13 @@
                         </div>
                     </div>
                 </div>
-                <!-- five -->
+
+                <!-----------------------
+                    cart five Pentagon
+                ------------------>
                 <div class="card card-compact bg-color-random w-full border-solid border-2 border-zinc-300 bg-base-100 shadow-xl">
                     <figure>
-                        <img class="w-full h-50 p-5 pt-3" src="./images/pentagon.png" alt="triangle" />
+                        <img class="w-full h-50 p-5 pt-3" src="./images/pentagon.png" alt="Pentagon" />
                     </figure>
                     <div class="card-body mx-auto items-center">
                         <h2 class="card-title" id="five-name">Pentagon</h2>
@@ -154,10 +169,13 @@
                     </div>
                 </div>
 
-                <!-- last -->
+                <!-- ------------------
+                    last card Ellipse
+                ------------------->
+
                 <div class="card card-compact bg-color-random w-full border-solid border-2 border-zinc-300 bg-base-100 shadow-xl">
                     <figure>
-                        <img class="w-full h-50 p-5 pt-20" src="./images/ellipse.png" alt="triangle" />
+                        <img class="w-full h-50 p-5 pt-20" src="./images/ellipse.png" alt="Ellipse" />
                     </figure>
                     <div class="card-body mx-auto items-center mt-2 ">
                         <h2 class="card-title" id="last-name">Ellipse</h2>
@@ -176,7 +194,13 @@
                     </div>
                 </div>
             </div>
-            <!-- cart details div  -->
+
+
+
+         <!-------------------------
+            -- area calculation div  
+        ------------------------------->
+
             <div class="cart-details w-1/7 mx-auto">
                 <h1 class="text-xl text-center font-bold underline m-5">
                     Area Calculation <span id="area-calculation"></span>
@@ -196,7 +220,7 @@
     </main>
 
 
-
+<script src="./js/common.js"></script>
 <script src="./js/index.js"></script>
 </body>
 
