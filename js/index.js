@@ -1,21 +1,13 @@
-// console.log("Hello arafat")
-
 // blog button 
 
 document.getElementById("btn-blog").addEventListener('click', function () {
     window.location.href = 'blog.html'
-    console.log("dfjkjfsdj")
 })
 
 
 // all card 
 
 let serial=0;
-
-
-
-
-
 
 
 // 1st card triangle
@@ -31,7 +23,7 @@ document.getElementById("first-card").addEventListener("click", function () {
 });
 
 
-// 2nd card 
+// 2nd card rectangle
 document.getElementById("second-card").addEventListener("click", function () {
     serial += 1;
     
@@ -44,7 +36,7 @@ document.getElementById("second-card").addEventListener("click", function () {
 });
 
 
-// 3rd card 
+// 3rd card parallelogram
 
 document.getElementById("third-card").addEventListener("click", function () {
     serial += 1;
@@ -57,7 +49,7 @@ document.getElementById("third-card").addEventListener("click", function () {
 
 });
 
-// 4rd card 
+// 4rd card rhombus
 
 document.getElementById("four-card").addEventListener("click", function () {
     serial += 1;
@@ -69,7 +61,9 @@ document.getElementById("four-card").addEventListener("click", function () {
     display(serial,nameValue.name,area);
 
 });
-// 5rd card 
+
+
+// 5rd card pentagon
 
 document.getElementById("five-card").addEventListener("click", function () {
     serial += 1;
@@ -83,7 +77,7 @@ document.getElementById("five-card").addEventListener("click", function () {
 });
 
 
-// last card 
+// last card ellipse
 
 document.getElementById("last-card").addEventListener("click", function () {
     serial += 1;
@@ -101,15 +95,18 @@ document.getElementById("last-card").addEventListener("click", function () {
 
 
 
-// randam background color 
+// random background color 
 const cards = document.querySelectorAll(".bg-color-random");
 for (const card of cards) {
   const originalColor = card.style.backgroundColor;
-  card.addEventListener("mouseover", () => {
-    const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+  card.addEventListener("mouseover", function() {
+    const randomColor = "#" + Math.floor(Math.random() * 10000).toString(16);
     card.style.backgroundColor = randomColor;
   });
-  card.addEventListener("mouseout", () => {
+  card.addEventListener("mouseout",  function(){
     card.style.backgroundColor = originalColor;
   });
 }
+
+
+
