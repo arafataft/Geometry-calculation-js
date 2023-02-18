@@ -34,7 +34,7 @@
             <div class="products-cetails w-3/4 mx-auto mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
                 <!-- first card  -->
-                <div class="card card-compact w-full border-solid border-2 border-zinc-300 bg-base-100 shadow-xl">
+                <div class="card card-compact bg-color-random w-full border-solid border-2 border-zinc-300 bg-base-100 shadow-xl">
                     <figure>
                         <img class="ow-full h-50 p-5" src="./images/triangle.png" alt="triangle" />
                     </figure>
@@ -62,7 +62,7 @@
                     </div>
                 </div>
                 <!-- second -->
-                <div class="card card-compact w-full bg-base-100 border-solid border-2 border-zinc-300 shadow-xl">
+                <div class="card card-compact bg-color-random w-full bg-base-100 border-solid border-2 border-zinc-300 shadow-xl">
                     <figure>
                         <img class="w-full h-50 p-5 pt-14" src="./images/rectangle.png" alt="triangle" />
                     </figure>
@@ -90,7 +90,7 @@
                     </div>
                 </div>
                 <!-- third -->
-                <div class="card card-compact w-full bg-base-100 border-solid border-2 border-zinc-300 shadow-xl">
+                <div class="card card-compact bg-color-random w-full bg-base-100 border-solid border-2 border-zinc-300 shadow-xl">
                     <figure>
                         <img class="w-full h-50 p-5 pt-16 mt-4" src="./images/parallelogram.png" alt="triangle" />
                     </figure>
@@ -112,42 +112,42 @@
                 </div>
 
                 <!-- four -->
-                <div class="card card-compact w-full border-solid border-2 border-zinc-300 bg-base-100 shadow-xl">
+                <div class="card card-compact bg-color-random w-full border-solid border-2 border-zinc-300 bg-base-100 shadow-xl">
                     <figure>
                         <img class="w-full h-50 p-5 pt-16" src="./images/rhombus.png" alt="triangle" />
                     </figure>
                     <div class="card-body mx-auto items-center">
-                        <h2 class="card-title" id="first-name">Rhombus</h2>
+                        <h2 class="card-title" id="four-name">Rhombus</h2>
                         <p>
                             Area (A) = 0.5 &#215; d<sub>1</sub> &#215; d<sub>2</sub>
                         </p>
                         <p>
-                            d<sub>1</sub>= 16 cm, d<sub>2</sub>=8cm
+                            d<sub>1</sub>= <span id="rhombusFirstValue">16</span> cm, d<sub>2</sub>=<span id="rhombusSecondValue">8</span> cm
                         </p>
 
                         <div class="card-actions justify-center">
-                            <button class="btn btn-primary px-10" id="first-card">
+                            <button class="btn btn-primary px-10" id="four-card">
                                 Calculate
                             </button>
                         </div>
                     </div>
                 </div>
                 <!-- five -->
-                <div class="card card-compact w-full border-solid border-2 border-zinc-300 bg-base-100 shadow-xl">
+                <div class="card card-compact bg-color-random w-full border-solid border-2 border-zinc-300 bg-base-100 shadow-xl">
                     <figure>
                         <img class="w-full h-50 p-5 pt-3" src="./images/pentagon.png" alt="triangle" />
                     </figure>
                     <div class="card-body mx-auto items-center">
-                        <h2 class="card-title" id="first-name">Pentagon</h2>
+                        <h2 class="card-title" id="five-name">Pentagon</h2>
                         <p>
                             Area (A) = 0.5 &#215; p &#215; b
                         </p>
                         <p>
-                            p=6cm, b=10cm
+                            p=<span id="pentagonFirstValue">8</span> cm, b=<span id="pentagonSecondValue">10</span> cm
                         </p>
 
                         <div class="card-actions justify-center">
-                            <button class="btn btn-primary px-10" id="first-card">
+                            <button class="btn btn-primary px-10" id="five-card">
                                 Calculate
                             </button>
                         </div>
@@ -155,21 +155,21 @@
                 </div>
 
                 <!-- last -->
-                <div class="card card-compact w-full border-solid border-2 border-zinc-300 bg-base-100 shadow-xl">
+                <div class="card card-compact bg-color-random w-full border-solid border-2 border-zinc-300 bg-base-100 shadow-xl">
                     <figure>
                         <img class="w-full h-50 p-5 pt-20" src="./images/ellipse.png" alt="triangle" />
                     </figure>
                     <div class="card-body mx-auto items-center mt-2 ">
-                        <h2 class="card-title" id="first-name">Ellipse</h2>
+                        <h2 class="card-title" id="last-name">Ellipse</h2>
                         <p>
                             Area (A) = &pi;ab
                         </p>
                         <p>
-                            a=10cm, b=4cm
+                            a=<span id="ellipseFirstValue">10</span> cm, b=<span id="ellipseSecondValue">4</span> cm
                         </p>
 
                         <div class="card-actions justify-center">
-                            <button class="btn btn-primary px-10" id="first-card">
+                            <button class="btn btn-primary px-10" id="last-card">
                                 Calculate
                             </button>
                         </div>
